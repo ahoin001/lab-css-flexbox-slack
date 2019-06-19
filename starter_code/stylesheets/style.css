@@ -5,3 +5,42 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    /* create flexbox */
+    display: flex;
+    /* space content in box evenly */
+    justify-content: space-between;
+    /* vertically align content in the box */
+    align-items: center;
+
+    /* height of navbar will be 8% of the screen it is displayed on */
+    height: 8vh;
+
+
+    border: 1px solid green;
+}
+
+nav img{
+    width: 9vw;
+}
+
+nav li{
+    /* make links horizontal */
+    display: inline-block;
+
+    padding: 28px 15px;
+    margin: 0 10px;
+
+    /* line-height: 8vh; */
+    border: 1px solid blue;
+}
+
+.empty-div{
+
+}
