@@ -5,13 +5,6 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
 * {
   padding: 0;
   margin: 0;
@@ -20,6 +13,12 @@ nav grey: #5b5e6d;
 
   font-family: "Roboto", sans-serif;
 }
+
+/************************************************************
+          
+        NAV
+
+************************************************************/
 
 nav {
 
@@ -31,8 +30,11 @@ nav {
   align-items: center;
 
   padding: 0 35px;
+
   /* color of nav links */
   color: #5b5e6d;
+
+  background-color: white;
 
   border-bottom: .25px solid #ddd;
 
@@ -46,21 +48,86 @@ nav img {
   width: 10vw;
 }
 
-nav ul{
+nav ul {
   list-style: none;
 
   /* Makes list horizontal */
   display: flex;
 }
 
-nav ul li{
- 
+nav ul li {
+
   padding: 5px 10px;
 
 }
 
-nav > ul > li:last-child{
-  border: 1px  
+nav>ul>li:last-child {
+  border: 1px;
   border-radius: 10px;
 }
 
+img {
+  width: 100px;
+}
+
+/************************************************************
+          
+        Header
+
+************************************************************/
+
+
+
+
+header {
+  /* push header below navbar */
+  padding-top: 175px;
+
+  margin-bottom: 120px;
+
+  display: flex;
+  align-content: center;
+
+  /* border: 1px solid blue; */
+}
+
+/* Both divs in header will be 50% width */
+header>div {
+
+  width: 50%;
+
+  border: 1px solid blue;
+}
+
+header img {
+
+  width: 400px;
+
+}
+
+header h1 {
+
+  font-size: 75px;
+  line-height: 70px;
+
+}
+
+
+header p {
+  font-size: 18px;
+  /* Why use em */
+  line-height: 1.5em;
+
+
+}
+
+header button{
+
+  font-size: 15px;
+
+  color: white;
+  background-color: #192592;
+
+  border-radius: 4px;
+  padding: 7px 15px;
+}
