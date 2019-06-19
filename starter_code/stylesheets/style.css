@@ -5,42 +5,62 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/*
+background-grey: #F4F3F4;
+button-purple: #192592
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
+*/
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
 }
 
-nav{
-    /* create flexbox */
-    display: flex;
-    /* space content in box evenly */
-    justify-content: space-between;
-    /* vertically align content in the box */
-    align-items: center;
+nav {
 
-    /* height of navbar will be 8% of the screen it is displayed on */
-    height: 8vh;
+  /* create flexbox */
+  display: flex;
+  /* space content in box evenly */
+  justify-content: space-between;
+  /* vertically align content in the box */
+  align-items: center;
 
+  padding: 0 35px;
+  /* color of nav links */
+  color: #5b5e6d;
 
-    border: 1px solid green;
+  border-bottom: .25px solid #ddd;
+
+  /* sticks nav in place while scrolling */
+  /* This will mess with the width of the container so we have to manually set width to 100 */
+  position: fixed;
+  width: 100%;
 }
 
-nav img{
-    width: 9vw;
+nav img {
+  width: 10vw;
 }
 
-nav li{
-    /* make links horizontal */
-    display: inline-block;
+nav ul{
+  list-style: none;
 
-    padding: 28px 15px;
-    margin: 0 10px;
-
-    /* line-height: 8vh; */
-    border: 1px solid blue;
+  /* Makes list horizontal */
+  display: flex;
 }
 
-.empty-div{
+nav ul li{
+ 
+  padding: 5px 10px;
 
 }
+
+nav > ul > li:last-child{
+  border: 1px  
+  border-radius: 10px;
+}
+
